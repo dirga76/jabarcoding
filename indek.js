@@ -1,45 +1,41 @@
-// Aldo Febrian
+//ALDO febrian d.m
+// soal 1
 
-// Soal Satu
+const luas = (x, y) => x * y;
+const keliling = (x, y) => 2 * (x + y);
+console.log("hitung luas dan keliling persegi panjang : ");
+console.log(luas(5, 2));
+console.log(keliling(5, 2));
 
-var kalimat1 = "saya sangat senang hari ini";
-var kalimat2 = "belajar javascript itu keren";
+// soal 2
+const fullNamee = {
+    firstNamee: "William",
+    lastNamee: "Imoh",
+};
+const { firstNamee, lastNamee } = fullNamee;
+console.log(firstNamee, lastNamee);
 
-// Jawaban Soal Satu
+// soal 3
+const newObject = {
+    firstName: "Muhammad",
+    lastName: "Iqbal Mubarok",
+    address: "Jalan Ranamanyar",
+    hobby: "playing football",
+};
+const { firstName, lastName, address, hobby } = newObject;
 
-var saya = kalimat1.substr(0, 5);
-var senang = kalimat1.substr(12, 7);
-var belajar = kalimat2.substr(0, 8);
-var javascript = kalimat2.substr(8, 11);
-var hasil1 = saya.concat("", senang);
-var hasil2 = belajar.concat("", javascript);
-var hasilakhir = hasil1.concat("", hasil2);
+console.log(firstName, lastName, address, hobby);
 
-console.log(hasilakhir);
+// soal 4
+const west = ["Will", "Chris", "Sam", "Holly"];
+const east = ["Gill", "Brian", "Noel", "Maggie"];
+const combined = [...west, ...east];
+console.log(combined);
 
-// Soal Dua
-var kataPertama = 10,
-    kataKedua = 2,
-    kataKetiga = 4,
-    kataKeempat = 6;
-
-// Jawaban Soal Dua
-
-console.log(kataPertama + kataKeempat + kataKetiga * kataKedua);
-
-//Soal Tiga
-
-var kalimat = "wah javascript itu keren sekali";
-
-// Jawaban Soal Tiga
-var kataPertama = kalimat.substring(0, 3);
-var kataKedua = kalimat.substring(4, 14);
-var kataKetiga = kalimat.substring(15, 8);
-var kataKeempat = kalimat.substring(19, 24);
-var kataKelima = kalimat.substring(25, 31);
-
-console.log("Kata Pertama:" + kataPertama);
-console.log("Kata Kedua:" + kataKedua);
-console.log("Kata Ketiga:" + kataKetiga);
-console.log("Kata Keempat:" + kataKeempat);
-console.log("Kata Kelima:" + kataKelima);
+// soal 5
+const planet = "earth";
+const view = "glass";
+// var before = 'Lorem ' + view + 'dolor sit amet, ' + 'consectetur adipiscing elit,' + planet
+const theString =
+    "Lorem ${view} dolor sit amet, consectetur adipiscing elit ${planet}";
+console.log(theString);
